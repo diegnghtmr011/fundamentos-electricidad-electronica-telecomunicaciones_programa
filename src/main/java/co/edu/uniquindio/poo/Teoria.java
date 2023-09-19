@@ -15,9 +15,9 @@ public class Teoria {
          System.out.println(
             "\nBienvenido al apartado de teoría del curso en cuestión, en este lugar podrás interactuar\n"
             +"con los siguientes 3 tópicos mencionados en la bienvenida del curso, podrás ingresar a estos teniendo en cuenta lo siguiente:\n"
-            +"HISTORIA DE LA COMPUTACIÓN: Ingrese 1\n"
-            +"TIPOS DE ENERGIA: Ingrese 2\n"
-            +"MATERIALES CONDUCTORES Y AISLANTES: Ingrese 3\n");
+            +"- HISTORIA DE LA COMPUTACIÓN: Ingrese 1\n"
+            +"- TIPOS DE ENERGIA: Ingrese 2\n"
+            +"- MATERIALES CONDUCTORES Y AISLANTES: Ingrese 3\n");
     }
 
     
@@ -36,7 +36,7 @@ public class Teoria {
 
             case 1:{
                 System.out.println(
-                "Los inicios de la computación se remontan a la antigüedad, cuando las\n"
+                "\nLos inicios de la computación se remontan a la antigüedad, cuando las\n"
                 +"civilizaciones desarrollaban métodos primitivos para realizar cálculos matemáticos.\n" +
                 "Aquí hay un vistazo a algunos de los hitos clave en los primeros días de la computación:\n\n" +
                 "Máquinas analíticas de Babbage (siglo XIX): Charles Babbage diseñó varias máquinas analíticas\n" +
@@ -51,7 +51,7 @@ public class Teoria {
             }
             case 2:{
                 System.out.println(
-                "Existen diversos tipos de energía que impulsan nuestras vidas y dan vida a nuestro mundo\n"+
+                "\nExisten diversos tipos de energía que impulsan nuestras vidas y dan vida a nuestro mundo\n"+
                 "moderno. La energía térmica, por ejemplo, se deriva del calor y se utiliza para generar\n"+
                 "electricidad en plantas de energía geotérmica y solar, así como para calentar nuestros\n"+
                 "hogares. La energía cinética, en cambio, está asociada al movimiento y se aprovecha en\n"+
@@ -69,7 +69,7 @@ public class Teoria {
             }
             case 3:{
                 System.out.println(
-                "Los materiales conductores y aislantes desempeñan roles fundamentales en la electrónica.\n"+
+                "\nLos materiales conductores y aislantes desempeñan roles fundamentales en la electrónica.\n"+
                 "Los materiales conductores permiten que las corrientes eléctricas fluyan libremente debido a la abundancia de electrones libres en su\n"+
                 "estructura atómica. Esto los hace ideales para la fabricación de cables y componentes\n"+
                 "eléctricos. Por otro lado, los materiales aislantes, como el vidrio y el plástico, tienen una\n"+
@@ -80,7 +80,8 @@ public class Teoria {
                 "controlado de electricidad y garantizando la seguridad y el rendimiento óptimo.");
                 break;
             }
-
+            default:
+                throw new IllegalArgumentException("Opción no válida. Por favor ingrese un número entre 1 y 3 incluyéndolos");
         }
     sc.close();
     }

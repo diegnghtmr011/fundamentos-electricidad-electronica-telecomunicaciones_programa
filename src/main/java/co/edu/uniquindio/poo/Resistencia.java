@@ -68,13 +68,13 @@ public class Resistencia {
         System.out.println(instancia.mostrarMenuResistencia());
 
         // Solicitamos los valores de las bandas de la resistencia
-        System.out.println("Ingrese el color de la banda 1 (0-9): ");
+        System.out.println("Ingrese el color de la banda 1 (0-9): \n");
         int colorBanda1 = sc.nextInt();
-        System.out.println("Ingrese el color de la banda 2 (0-9): ");
+        System.out.println("Ingrese el color de la banda 2 (0-9): \n");
         int colorBanda2 = sc.nextInt();
-        System.out.println("Ingrese el color de la banda 3 (0-9): ");
+        System.out.println("Ingrese el color de la banda 3 (0-9): \n");
         int colorBanda3 = sc.nextInt();
-        System.out.println("Ingrese 1 si la tolerancia es dorada o 2 si la tolerancia es plateada: ");
+        System.out.println("Ingrese 1 si la tolerancia es dorada o 2 si la tolerancia es plateada: \n");
         int tipoTolerancia = sc.nextInt();
 
         // Calculamos el valor de la resistencia
@@ -83,7 +83,7 @@ public class Resistencia {
         int valorTolerancia = calcularValorTolerancia(tipoTolerancia);
 
         // Mostramos el valor de la resistencia
-        System.out.println("El valor de la resistencia es: " + valorResistencia);
+        System.out.println("\nEl valor de la resistencia es: " + valorResistencia);
         // Mostramos el porcentaje de tolerancia
         System.out.println("Tolerancia: " + valorTolerancia + "%");
         sc.close();

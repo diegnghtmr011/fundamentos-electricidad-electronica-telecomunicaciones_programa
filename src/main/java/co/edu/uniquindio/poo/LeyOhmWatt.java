@@ -17,7 +17,7 @@ public class LeyOhmWatt {
      * Muestra los diferentes formulas a partir de la elecciones del usuario
      */
 
-    public static void menuLeyOmhWatt() {
+    public static void mostrarMenuLeyOmhWatt() {
         Scanner sc = new Scanner(System.in);
 
         mensajeAsignacion();
